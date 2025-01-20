@@ -1,0 +1,157 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+section header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+section header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+section header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+section header ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+section header ul li button{
+    background-color: #4584ef;
+    outline: none;
+    border: none;
+    margin-right: 5px;
+    padding: 8px 14px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+section .main{
+    width: 580px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section .main .searchbox{
+    position: relative;
+    left: -10px;
+    width: 100%;
+    margin-top: 10px;
+    margin-right: 60px;
+
+}
+
+section .main .searchbox .search{
+    width: 100%;
+    padding: 13px;
+    padding-left: 45px;
+    padding-right: 45px;
+    border-radius: 50px;
+
+    border: 1px solid #a5a5a5;
+}
+
+section .main .searchbox .icon{
+    position:absolute;
+    display: flex;
+    width: 100%;
+    top: 0;
+    padding: 12px 20px;
+    justify-content: space-between;
+
+
+}
+
+section .main .buttons{
+    margin-top: 20px;
+}
+section .main .buttons button{
+    margin: 0 5px;
+    padding: 12px 20px;
+    color: #555;
+    font-size: 14px;
+    border: none;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+}
+
+section .main .buttons button:hover{
+    border: 1px solid black;
+}
+
+section .main .lang{
+    margin-top: 20px;
+}
+
+
+section .footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #f2f2f2;
+}
+
+section .footer .row{
+    display: flex;
+    justify-content: space-between;
+    border-top:1px solid rgb(0, 0, 0, 0.05) ;
+}
+section .footer .row ul{
+    display: flex;
+}
+
+section .footer .row ul li{
+    list-style: none;
+}
+
+section .footer .row ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #586368;
+    margin-right: 25px;
+}
+
+
+@media (min-width:0px) and (max-width:850px){
+    section .main .searchbox {
+        width: 64%;
+    }
+
+    section .footer .row ul {
+        display: block;
+    }
+}
